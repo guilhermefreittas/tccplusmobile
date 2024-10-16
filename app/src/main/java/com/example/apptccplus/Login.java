@@ -39,7 +39,7 @@ public class Login extends AppCompatActivity {
         String email = editEmail.getText().toString();
         String senha = editSenha.getText().toString();
 
-        Usuario usu = new UsuarioCrud().selecionarUsuario(email, senha);
+       /* Usuario usu = new UsuarioCrud().selecionarUsuario(email, senha);
         if(usu != null){
                 lbResultado.setText("login com sucesso!");
                 Intent intent = new Intent(Login.this, MainActivity.class);

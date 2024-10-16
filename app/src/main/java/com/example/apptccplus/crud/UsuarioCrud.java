@@ -15,25 +15,28 @@ public class UsuarioCrud {
 
 
     //MODELO DO ED
-/*public  static int InserirUsuario(Usuario usuario, Context ctx){
+public  static int InserirUsuario(Usuario usuario, Context ctx){
 
         int resposta = 0;
 
         try {
-            PreparedStatement pst = conexao.conectar(ctx).prepareStatement(
-                    "Insert Into Usuario(nome, email, senha)" + "values (?, ?, ?)");
-            pst.setString(1, Usuario.getNome());
-            pst.setString(2, Usuario.getEmail());
-            pst.setString(3, Usuario.getSenha());
+            PreparedStatement pst = conexao.conectar().prepareStatement(
+                    "Insert Into Usuario(id, nome, email, senha, nivelAcesso, foto, dataCadastro, statusUsuario)" + "values (?, ?, ?, ?, ?, ?, ?, ?)");
+            //pst.setInt(1, Usuario.getId());
+            pst.setString(2, Usuario.getNome());
+            pst.setString(3, Usuario.getEmail());
+            pst.setString(4, Usuario.getSenha());
+            //pst.setString(5, Usuario.getNivelAcesso());
 
             resposta = pst.executeUpdate();
         } catch (Exception e){
             e.getMessage();
         }
         return resposta;
-    }*/
+    }
 
     //MODELO DO YOUTUBE
+    /*
     public Usuario selecionarUsuario(String email, String senha) {
         try {
             Connection conn = conexao.conectar();

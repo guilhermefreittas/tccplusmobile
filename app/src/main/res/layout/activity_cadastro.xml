@@ -19,7 +19,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editNome"
+        android:id="@+id/editNomeCadastro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/signuptitle"
@@ -33,10 +33,10 @@
         android:textColorHint="@color/white" />
 
     <EditText
-        android:id="@+id/editEmail"
+        android:id="@+id/editEmailCadastro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editNome"
+        android:layout_below="@id/editNomeCadastro"
         android:layout_margin="10dp"
         android:background="#30ffffff"
         android:drawableLeft="@drawable/ic_baseline_email_24"
@@ -47,10 +47,10 @@
         android:textColorHint="@color/white" />
 
     <EditText
-        android:id="@+id/editSenha"
+        android:id="@+id/editSenhaCadastro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editEmail"
+        android:layout_below="@id/editEmailCadastro"
         android:layout_margin="10dp"
         android:background="#30ffffff"
         android:drawableLeft="@drawable/ic_baseline_info_24"
@@ -62,10 +62,10 @@
         android:textColorHint="@color/white" />
 
     <EditText
-        android:id="@+id/editCoSenha"
+        android:id="@+id/editCoSenhaCadastro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editSenha"
+        android:layout_below="@id/editSenhaCadastro"
         android:layout_margin="10dp"
         android:background="#30ffffff"
         android:drawableLeft="@drawable/ic_baseline_info_24"
@@ -80,7 +80,7 @@
         android:id="@+id/btnCadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editCoSenha"
+        android:layout_below="@id/editCoSenhaCadastro"
         android:layout_centerHorizontal="true"
         android:layout_margin="15dp"
         android:backgroundTint="@color/white"
